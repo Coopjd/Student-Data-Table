@@ -3,6 +3,7 @@ using namespace std;
 #include "student.h"
 
 
+
 Student::Student() {
     studentID = -1;
     firstName = "No Name";
@@ -35,7 +36,18 @@ int Student::GetAge() const {
 }
 
 string Student::GetDegreeProgram() const {
-    return degreeProgram;
+    if (degreeProgram == SECURITY) {
+        return "Security";
+    }
+    else if (degreeProgram == NETWORK) {
+        return "Network";
+    }
+    else if (degreeProgram == SOFTWARE) {
+        return "Software";
+    }
+    else {
+        return "No Program";
+    }
 }
 
 
@@ -67,7 +79,7 @@ void Student::SetAge(int age) {
     this->age = age;
 }
 
-void Student::SetDegreeProgram(string degreeProgram) {
+void Student::SetDegreeProgram(DegreeProgram degreeProgram) {
     this->degreeProgram = degreeProgram;
 }
 

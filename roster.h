@@ -6,7 +6,7 @@
 class Roster {
     private:
     const int numStudents = 5;
-    Student* classRosterArray[numStudents];
+    Student* classRosterArray[5];
 };
 
 

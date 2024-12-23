@@ -1,6 +1,7 @@
 #ifndef student_h
 #define student_h
 #include <string>
+#include "degree.h"
 
 class Student {
 
@@ -12,7 +13,7 @@ class Student {
     string lastName;
     string emailAddress;
     int age;
-    string degreeProgram;
+    DegreeProgram degreeProgram;
 
     
     int totalDays[3] = {-1, -1, -1};
@@ -39,7 +40,7 @@ class Student {
     // figure out how to construct this array in student.cpp //
     void SetTotalDays(int totalDays[]);
 
-    void SetDegreeProgram(string degreeProgram);
+    void SetDegreeProgram(DegreeProgram degreeProgram);
 
 
     void PrintAllInfo() const;
