@@ -10,7 +10,7 @@ Student::Student() {
     emailAddress = "No Email";
     age = -1;
 
-// Find a way to initialize this array //
+
 
 }
 
@@ -41,7 +41,9 @@ string Student::GetDegreeProgram() const {
 
 // Figure out how to construct an array this way
 int Student::GetTotalDays() const {
-    return totalDays[3];
+    return totalDays[0];
+    return totalDays[1];
+    return totalDays[2];
 }
 
 
