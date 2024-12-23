@@ -37,7 +37,7 @@ class Student {
     void SetEmailAddress(string emailAddress);
     void SetAge(int age);
     // figure out how to construct this array in student.cpp //
-    void SetTotalDays(int totalDays);
+    void SetTotalDays(int totalDays[]);
 
     void SetDegreeProgram(string degreeProgram);
 

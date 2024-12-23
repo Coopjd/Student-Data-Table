@@ -65,14 +65,15 @@ void Student::SetAge(int age) {
     this->age = age;
 }
 
-void Student::SetTotalDays(int totalDays) {
-    
-}
-
 void Student::SetDegreeProgram(string degreeProgram) {
     this->degreeProgram = degreeProgram;
 }
 
+void Student::SetTotalDays(int totalDays[]) {
+    this->totalDays[0] = totalDays[0];
+    this->totalDays[1] = totalDays[1];
+    this->totalDays[2] = totalDays[2];
+}
 
 void Student::PrintAllInfo() const {
     cout << "Student ID: " << studentID << endl;
@@ -80,6 +81,10 @@ void Student::PrintAllInfo() const {
     cout << "Last Name:" << lastName << endl;
     cout << "Email: " << emailAddress << endl;
     cout << "Age: " << age << endl;
+    for (int i = 0; i < 3; ++i) {
+        cout << totalDays[i] << " ";
+    }
+    cout << endl;
     cout << "Degree Program: " << degreeProgram << endl;
 }
 
